@@ -10,7 +10,7 @@
 #include <sys/types.h>
 #include <fcntl.h>
 #include <sys/stat.h>
-#include <sys/wai.h>
+#include <sys/wait.h>
 
 #define CMD_NORM 0
 #define CMD_OR 1
@@ -94,7 +94,7 @@ typedef struct arginfo
 	list_t *envlst;
 	list_t *hist_n;
 	list_t *alias_n;
-} shellnfo_t;
+}
 
 #define INFO_INIT \
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
