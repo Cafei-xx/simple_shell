@@ -49,7 +49,6 @@ typedef struct listint_str
  */
 typedef struct builtin
 {
-	int (*fn)(info_t *);
 	char *type;
 } builtin_table;
 /**
@@ -98,8 +97,7 @@ typedef struct arginfo
 
 #define INFO_INIT \
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
-		0, 0, 0}
-int inter_mode(shellinfo_t *shellinfo);
+		0, 0, 0};
 int _strlen(char *str);
 char *_strcat(char *dest, const char *src);
 int _strcmp(char *str1, char *str2);
