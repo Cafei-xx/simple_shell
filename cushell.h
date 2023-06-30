@@ -39,11 +39,16 @@ void print_str(char *s);
 char *pathstr(char *right, char *first);
 char **parser(char *l);
 void print_int(int *tal);
+void free_freely(int n, ...);
+char *dup_string(char *s);
+char *str_str(char *dest, char *src);
+void free_dp(char **command);
 
 
 /* helpers.c: helper functions */
 void no_nl(char *l);
 void free_grid(char **grid, int height);
 int special_char(char *buffer, ssize_t bytes, int *ex_st);
+char *int_charac_ter(int num);
 
 #endif
